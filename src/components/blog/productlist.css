@@ -1,10 +1,12 @@
 /* src/components/ProductList.css */
 .blogproduct-list {
-    max-width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .bloglistContainer {
@@ -12,7 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: nowrap;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
 }
 
 .blogslidingInfo {
@@ -22,28 +25,31 @@
   align-items: center;
   flex-direction: column;
   margin-top: 3cm;
+  box-sizing: border-box;
 }
 
 .blogproductBar {
   display: flex;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: center;
   text-align: center;
   border-top: 1px solid;
   border-bottom: 1px solid;
   margin-bottom: 40px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .blogproductBar p {
   margin: 5px 30px;
   padding: 15px;
+  box-sizing: border-box;
 }
 
 .blogproductBar p:hover {
   color: #ff0000;
   cursor: pointer;
 }
-
 
 .blogviewAllText {
   position: absolute;
@@ -54,4 +60,64 @@
 
 .blogviewAllText:hover {
   cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .blogproduct-list {
+    max-width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .bloglistContainer {
+    flex-wrap: wrap;
+  }
+
+  .blogproductBar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blogviewAllText {
+    right: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogproduct-list {
+    max-width: 100%;
+  }
+
+  .blogproductBar p {
+    margin: 5px 10px;
+    padding: 10px;
+  }
+
+  .blogviewAllText {
+    right: 15%;
+    transform: translateY(60%);
+  }
+}
+
+@media (max-width: 480px) {
+  .blogproduct-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blogproductBar {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .blogproductBar p {
+    margin: 5px 0;
+    padding: 10px 5px;
+  }
+
+  .blogviewAllText {
+    right: 5%;
+    transform: translateY(50%);
+  }
 }

@@ -1,90 +1,151 @@
 /* src/components/ProductList.css */
 .popularproduct-list {
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 20px;
 }
 
 .popularlistContainer {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: nowrap;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: nowrap;
 }
 
 .popularslidingInfo {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 }
 
 .popularproductBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: space-between;
-  text-align: center;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  margin-bottom: 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+border-top: 1px solid;
+border-bottom: 1px solid;
+margin-bottom: 40px;
+width: 100%;
+padding: 10px 0;
 }
 
 .popularproductBar p {
-  margin: 5px 30px;
-  padding: 15px;
+margin: 5px 15px;
+padding: 10px;
+flex: 1;
 }
 
 .popularproductBar p:hover {
-  color: #ff0000;
-  cursor: pointer;
+color: #ff0000;
+cursor: pointer;
 }
 
 button.prevButton,
 button.nextButton {
-  max-width: 2%;
-  max-height: 2%;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px; /* Adjust padding as needed */
-  z-index: 1;
+max-width: 2%;
+max-height: 2%;
+background: none;
+border: none;
+cursor: pointer;
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px; /* Adjust padding as needed */
+z-index: 1;
 }
 
 .prevButton {
-  left: 7%;
+left: 7%;
 }
 .nextButton {
-  right: 7%;
+right: 7%;
 }
 
 button.prevButton img,
 button.nextButton img {
-  width: 40px;
-  height: 40px;
+width: 30px;
+height: 30px;
 }
 
 .prevButton img:hover,
 .nextButton img:hover {
-  filter: brightness(20%);
+filter: brightness(80%);
 }
 
 .popularviewAllText {
-  position: absolute;
-  color: #ff0000;
-  right: 5%;
-  transform: translateY(80%);
+position: absolute;
+color: #ff0000;
+right: 5%;
+top: 90%;
 }
 
 .popularviewAllText:hover {
-  cursor: pointer;
+cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+.popularproductBar p {
+  margin: 5px 10px;
+  padding: 8px;
+}
+
+button.prevButton img,
+button.nextButton img {
+  width: 25px;
+  height: 25px;
+}
+}
+
+@media (max-width: 768px) {
+.popularproduct-list {
+  width: 90vw;
+  flex-wrap: wrap;
+}
+
+.prevButton {
+  left: 3%;
+}
+.nextButton {
+  right: 3%;
+}
+
+.popularviewAllText {
+  right: 3%;
+}
+}
+
+@media (max-width: 480px) {
+.popularproduct-list {
+  width: 95vw;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.popularproductBar p {
+  margin: 5px 5px;
+  padding: 5px;
+  font-size: 0.9em;
+}
+
+button.prevButton,
+button.nextButton {
+  display: none; /* Hide buttons on very small screens */
+}
+
+.popularviewAllText {
+  right: 2%;
+  font-size: 0.9em;
+}
 }

@@ -1,4 +1,5 @@
 /* src/components/Product.css */
+
 .dressproduct-card {
     width: 350px;
     height: 620px;
@@ -15,11 +16,11 @@
 }
 
 .dresstitleContainer {
-  display: flex;
-  flex: 100%;
-  height: 120px;
-  margin-left: 5px;
-  margin-top: 20px;
+    display: flex;
+    flex: 100%;
+    height: 120px;
+    margin-left: 5px;
+    margin-top: 20px;
 }
 
 .dresstitleContainer h3 {
@@ -40,9 +41,9 @@
 }
 
 .dresslikeImg {
-  margin-top: 18px;
-  max-width: 100%;
-  height: auto;
+    margin-top: 18px;
+    max-width: 100%;
+    height: auto;
 }
 
 .dressproduct-card p {
@@ -71,4 +72,11 @@
     background-color: #ff0000;
     color: #fff;
     border: 1px solid #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+    .dressproduct-card {
+        width: calc(100% - 40px);
+        margin: 10px 20px;
+    }
 }

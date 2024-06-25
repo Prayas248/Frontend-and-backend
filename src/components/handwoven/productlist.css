@@ -1,10 +1,13 @@
 /* src/components/ProductList.css */
+
 .handwovenproduct-list {
-    max-width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 20px;
 }
 
 .handwovenlistContainer {
@@ -32,11 +35,14 @@
   border-top: 1px solid;
   border-bottom: 1px solid;
   margin-bottom: 40px;
+  padding: 10px 20px;
+  overflow-x: auto;
 }
 
 .handwovenproductBar p {
   margin: 5px 30px;
   padding: 15px;
+  white-space: nowrap;
 }
 
 .handwovenproductBar p:hover {
@@ -46,8 +52,8 @@
 
 button.prevButton,
 button.nextButton {
-  max-width: 2%;
-  max-height: 2%;
+  max-width: 5%;
+  max-height: 5%;
   background: none;
   border: none;
   cursor: pointer;
@@ -57,7 +63,7 @@ button.nextButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Adjust padding as needed */
+  padding: 20px;
   z-index: 1;
 }
 
@@ -88,4 +94,32 @@ button.nextButton img {
 
 .handwovenviewAllText:hover {
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .handwovenproduct-list {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+  }
+
+  .handwovenproductBar {
+      overflow-x: auto;
+  }
+
+  .handwovenproductBar p {
+      margin: 5px 10px;
+      padding: 10px;
+  }
+
+  button.prevButton,
+  button.nextButton {
+      max-width: 10%;
+      padding: 10px;
+  }
+
+  .handwovenviewAllText {
+      transform: translateY(0%);
+      position: relative;
+      margin-top: 20px;
+  }
 }

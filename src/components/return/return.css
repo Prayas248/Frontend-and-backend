@@ -1,55 +1,127 @@
 .returncontainer {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: sans-serif;
-  }
-  
-  .returntitle {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: red;
-  }
-  .returnp{
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
 
+.returntitle {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: red;
+}
+
+.returnp {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.returntext {
+  text-align: left;
+  color: #4D4D4D;
+}
+
+.returntext p {
+  margin-left: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  margin-left: 18px;
+}
+
+ol {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  border: none;
+  border-top: 1px solid black;
+  margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .returncontainer {
+      width: 90%;
+      padding: 15px;
   }
-  .returntext{
-    text-align: left;
-    color: #4D4D4D ;
+
+  .returntitle {
+      font-size: 1.8em;
   }
-  .returntext p{
-    margin-left: 20px;
+
+  .returnp {
+      font-size: 1.1em;
   }
+
   h2 {
-    margin-top: 30px;
-    font-size: 1.5em;
-    margin-bottom: 15px;
-    margin-left: 18px;
+      font-size: 1.4em;
   }
-  
-  ol {
-    margin-top: 10px;
-    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .returncontainer {
+      width: 95%;
+      padding: 10px;
   }
-  
-  li {
-    margin-bottom: 10px;
+
+  .returntitle {
+      font-size: 1.6em;
   }
-  
-  a {
-    color: #2196F3;
-    text-decoration: none;
+
+  .returnp {
+      font-size: 1em;
   }
-  
-  a:hover {
-    text-decoration: underline;
+
+  h2 {
+      font-size: 1.3em;
+      margin-left: 10px;
   }
-  .line{
-        border: none;
-        border-top: 1px solid black; 
-        margin: 20px 0;
-      }
+
+  .returntext p {
+      margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .returncontainer {
+      width: 100%;
+      padding: 5px;
+  }
+
+  .returntitle {
+      font-size: 1.4em;
+  }
+
+  .returnp {
+      font-size: 0.9em;
+  }
+
+  h2 {
+      font-size: 1.2em;
+      margin-left: 5px;
+  }
+
+  .returntext p {
+      margin-left: 10px;
+  }
+}

@@ -1,13 +1,15 @@
-
 /* src/components/Product.css */
+
 .customproduct-card {
-    width: 350px;
-    height: 620px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
     border: 1px solid #e0e0e0;
     padding: 5px;
     text-align: center;
     transition: all 0.3s ease;
-    margin: 10px 20px;
+    margin: 10px;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
 }
 
 .customproduct-card img {
@@ -16,17 +18,18 @@
 }
 
 .customtitleContainer {
-  display: flex;
-  height: 120px;
-  flex: 100%;
-  margin-left: 5px;
-  margin-top: 20px;
+    display: flex;
+    height: 120px;
+    margin-left: 5px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .customtitleContainer h3 {
     font-size: 1.2em;
     margin: 10px 0;
-    flex: 90%;
+    flex: 1;
     text-align: left;
     padding-left: 15px;
 }
@@ -35,15 +38,13 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
     height: auto;
 }
 
 .customlikeImg {
-  margin-top: 18px;
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .customproduct-card p {
@@ -55,11 +56,12 @@
 
 .customadd-to-cart-btn {
     width: 90%;
+    max-width: 100%;
     background-color: #fff;
     border: 1px solid #555;
     color: #555;
     padding: 10px 20px;
-    margin: 10px;
+    margin: 10px auto;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -72,4 +74,19 @@
     background-color: #ff0000;
     color: #fff;
     border: 1px solid #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+    .customproduct-card {
+        max-width: 100%;
+    }
+
+    .customtitleContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .customlikeImgContainer {
+        padding: 0;
+    }
 }

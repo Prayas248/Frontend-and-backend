@@ -1,54 +1,95 @@
-
-
 .check {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: 1px solid #ccc;
+}
+
+header h1 {
+  color: red;
+  margin: 0;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.confirmation {
+  margin-top: 2em;
+}
+
+.checkorder-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+.checkorder-summary .checkorder-info p,
+.checkorder-summary .checkbank-details p {
+  margin: 0.5em 0;
+}
+
+.checkorder-details {
+  margin-top: 1em;
+}
+
+.checkbank-details h3 {
+  margin-top: 2em;
+}
+
+.checkorder-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.checkorder-details table th,
+.checkorder-details table td {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+  text-align: left;
+}
+
+.checkorder-details table th {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .check {
+    padding: 10px;
   }
-  
-  header {
-    border-bottom: 1px solid #ccc;
-  }
-  
+
   header h1 {
-    color: red;
-    margin: 0;
-    text-align: center;
-    font-size: 40px;
+    font-size: 2em;
   }
-  
+
   .confirmation {
-    margin-top: 50px;
+    margin-top: 1em;
   }
-  
+
   .checkorder-summary {
-    justify-content: space-between;
-    margin-top: 20px;
+    flex-direction: column;
   }
-  
-  .checkorder-summary .checkorder-info p,
-  .checkorder-summary .checkbank-details p {
-    margin: 5px 0;
-  }
-  
-  .checkorder-details {
-    margin-top: 20px;
-  }
-  .checkbank-details h3{
-    margin-top: 40px;
-  }
-  .checkorder-details table {
+
+  .checkorder-summary .checkorder-info,
+  .checkorder-summary .checkbank-details {
     width: 100%;
-    border-collapse: collapse;
   }
-  
+
   .checkorder-details table th,
   .checkorder-details table td {
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: left;
+    padding: 0.3em;
   }
-  
-  .checkorder-details table th {
-    background-color: #f9f9f9;
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
   }
-  
+
+  .checkorder-details table th,
+  .checkorder-details table td {
+    padding: 0.2em;
+  }
+}

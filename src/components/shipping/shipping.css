@@ -1,36 +1,83 @@
-.shipping  {
-    font-family: sans-serif;
-    margin: 0 auto;
-    padding: 20px;
-    align-items: center;
-    margin-left: 8cm;
+.shipping {
+  font-family: sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+  max-width: 100%; /* Ensures the container doesn't exceed the viewport width */
+}
+
+h1 {
+  color: red;
+}
+
+.set {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #4D4D4D;
+}
+
+h2, h3 {
+  text-align: left;
+  margin-bottom: 20px;
+  color: black;
+}
+
+p {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .shipping, .set {
+      margin-left: 0;
+      padding: 15px;
   }
-  h1{
-    color: red;
+
+  .set {
+      max-width: 700px;
   }
-  .set{
-    text-align: left;
-    max-width: 800px;
-    margin-left: 8cm;
-    color: #4D4D4D ;
-    margin-left: 8cm;
+}
+
+@media (max-width: 768px) {
+  .shipping, .set {
+      padding: 10px;
   }
-   h2, h3 {
-    text-align: left; 
-    margin-bottom: 20px;
-    color: black;
+
+  .set {
+      max-width: 100%;
   }
-  
-  p{
-    text-align: left;
-    margin-bottom: 15px;
+
+  h2, h3 {
+      margin-bottom: 15px;
   }
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
+
+  p, li {
+      margin-bottom: 10px;
   }
-  
-  li {
-    margin-bottom: 10px;
-    text-align: left;
+}
+
+@media (max-width: 480px) {
+  .shipping, .set {
+      padding: 5px;
   }
+
+  h2, h3 {
+      margin-bottom: 10px;
+  }
+
+  p, li {
+      margin-bottom: 8px;
+  }
+}

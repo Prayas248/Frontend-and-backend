@@ -1,46 +1,103 @@
 .perspective-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: pink;
-    font-family: 'Arial, sans-serif';
-    margin-top: 3cm;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: pink;
+  font-family: 'Arial, sans-serif';
+  margin-top: 3cm;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.perspective-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-container {
+  flex: 2;
+  padding: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.text-container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.text-container .highlight {
+  color: #b91d1d;
+}
+
+.text-container p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .perspective-container {
+      flex-direction: column;
+      margin-top: 2cm;
   }
-  
+
   .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+      padding: 10px;
   }
-  
-  .perspective-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
+
   .text-container {
-    flex: 2;
-    padding: 20px;
-    color: #333;
-    text-align: left;
+      padding: 20px;
+      text-align: center;
   }
-  
+
   .text-container h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+      font-size: 2em;
   }
-  
-  .text-container .highlight {
-    color: #b91d1d;
-  }
-  
+
   .text-container p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
+      font-size: 1em;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .perspective-container {
+      margin-top: 1cm;
+  }
+
+  .perspective-image {
+      border-radius: 0;
+  }
+
+  .text-container h1 {
+      font-size: 1.8em;
+  }
+
+  .text-container p {
+      font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .perspective-container {
+      margin-top: 0.5cm;
+      padding: 10px;
+  }
+
+  .text-container h1 {
+      font-size: 1.5em;
+  }
+
+  .text-container p {
+      font-size: 0.8em;
+  }
+}

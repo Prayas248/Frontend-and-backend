@@ -1,124 +1,155 @@
-
-
 .footer {
-    background-color: white;
-    color: #292727;
-    text-align: center;
-    font-family: 'Arial', san-serif;
-    width: 100%;
-    bottom: 0;
-    
-  }
-  
+  background-color: white;
+  color: #292727;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerInfo {
+  background-color: #f7f5f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin-top: 100px;
+}
+
+.mainFooter {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  color: #292727;
+  padding: 20px;
+}
+
+.contact-section1 {
+  padding-bottom: 10px;
+}
+
+.paymentInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.thanks {
+  background-color: #f7f5f6;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  background-color: #323d34;
+  color: white;
+  padding: 10px;
+}
+
+.footerLinks {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 10px;
+}
+
+.greyFont {
+  color: grey;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+.heading {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0.5em 0;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+
+.inputEmail {
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.subscribeButton {
+  width: 100%;
+  max-width: 100px;
+  height: 50px;
+  background-color: #323d34;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.infoIcons {
+  width: 30px;
+  height: auto;
+  padding: 5px;
+}
+
+.paymentIcons {
+  width: 30px;
+  height: auto;
+  padding: 5px;
+}
+
+.socialMediaIcons {
+  width: 20px;
+  height: auto;
+  padding: 5px;
+}
+
+.jijivishaLogo {
+  width: 150px;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
   .footerInfo {
-    background-color: #f7f5f6;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 40px;
-    margin-top: 100px;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
   }
-  
+
   .mainFooter {
-    display: flex;
-    text-align: left;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: white;
-    color: 292727;
-    padding-top: 120px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 20px;
-    bottom: 0;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      text-align: left;
+      padding: 40px;
   }
-  
-  .contact-section1{
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .paymentInfo {
-    padding-bottom: 20px;
-  }
-  
+
   .thanks {
-    background-color: #f7f5f6;
-    padding: 5px;
-    margin-bottom: 5px;
+      padding: 10px 20px;
   }
-  
-  .copyright {
-    background-color: #323d34;
-    color: white;
-    padding: 5px;
-  }
-  
+
   .footerLinks {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-    margin-bottom: 20px;
+      display: inline-block;
+      margin-bottom: 0;
   }
-  
-  .paymentInfo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .greyFont {
-    color: grey;
-    font-size: 12px;
-    padding-bottom: 10px;
-  }
-  
-  .heading {
-    font-size: 1.25em;
-    font-weight: bold;
-    margin: 1em 0; 
-    line-height: 1.2;
-    padding-bottom: 25px;
-  }
-  
-  .contact-section1 {
-    padding-bottom: 15px;
-  }
-  
-  .inputEmail {
-    width: 200px;
-    height: 40px;
-  }
-  
+
   .subscribeButton {
-    width: 100px;
-    height: 50px;
-    background-color: #323d34;
-    color: white;
+      width: auto;
+      margin-bottom: 0;
   }
-  
-  .infoIcons{
-    width: 40px;
-    height: auto;
-    padding: 8px;
-  }
-  
-  .paymentIcons {
-    width: 40px;
-    height: auto;
-    padding: 8px;
-  }
-  
+
+  .infoIcons,
+  .paymentIcons,
   .socialMediaIcons {
-    width: 25px;
-    height: auto;
-    padding: 8px;
+      width: 40px;
+      padding: 8px;
   }
-  
+
   .jijivishaLogo {
-    width: 200px;
-    height: auto;
-    padding-bottom: 20px;
+      width: 200px;
+      padding-bottom: 20px;
   }
-  
+}

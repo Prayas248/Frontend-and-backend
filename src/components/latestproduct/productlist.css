@@ -1,10 +1,13 @@
 /* src/components/ProductList.css */
+
 .latestproduct-list {
-    max-width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+  max-width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0 auto; 
+  overflow-x: auto; 
 }
 
 .latestlistContainer {
@@ -13,6 +16,8 @@
   justify-content: center;
   align-items: center;
   flex: nowrap;
+  margin-top: 20px; 
+  overflow: hidden; 
 }
 
 .latestslidingInfo {
@@ -21,22 +26,23 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 110px;
+  margin-top: 110px; 
 }
 
 .latestproductBar {
   display: flex;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: center; 
   text-align: center;
   border-top: 1px solid;
   border-bottom: 1px solid;
-  margin-bottom: 40px;
+  margin-bottom: 20px; 
+  padding: 10px 0;
 }
 
 .latestproductBar p {
-  margin: 5px 30px;
-  padding: 15px;
+  margin: 5px 15px; 
+  padding: 10px; 
 }
 
 .latestproductBar p:hover {
@@ -46,8 +52,8 @@
 
 button.prevButton,
 button.nextButton {
-  max-width: 2%;
-  max-height: 2%;
+  width: 40px; 
+  height: 40px; 
   background: none;
   border: none;
   cursor: pointer;
@@ -57,21 +63,22 @@ button.nextButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px; /* Adjust padding as needed */
   z-index: 1;
+  padding: 0; 
 }
 
 .prevButton {
-  left: 7%;
+  left: 10px; 
 }
+
 .nextButton {
-  right: 7%;
+  right: 10px; 
 }
 
 button.prevButton img,
 button.nextButton img {
-  width: 40px;
-  height: 40px;
+  width: 100%; 
+  height: 100%;
 }
 
 .prevButton img:hover,
@@ -82,10 +89,63 @@ button.nextButton img {
 .latestviewAllText {
   position: absolute;
   color: #ff0000;
-  right: 5%;
-  transform: translateY(80%);
+  right: 10px; 
+  bottom: 10px; 
 }
 
 .latestviewAllText:hover {
   cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .latestproduct-list {
+      max-width: 90vw; 
+  }
+}
+
+@media (max-width: 768px) {
+  .latestproduct-list {
+      flex-wrap: wrap; 
+      justify-content: flex-start; 
+  }
+
+  .latestlistContainer {
+      flex-direction: column; 
+      align-items: flex-start; 
+  }
+
+  .latestslidingInfo {
+      margin-top: 50px; 
+  }
+
+  .latestproductBar {
+      justify-content: center; 
+  }
+
+  .latestproductBar p {
+      margin: 5px; 
+      padding: 8px; 
+  }
+
+  button.prevButton,
+  button.nextButton {
+      width: 30px; 
+      height: 30px; 
+      padding: 5px; 
+  }
+
+  .prevButton {
+      left: 5px; 
+  }
+
+  .nextButton {
+      right: 5px; 
+  }
+
+  .latestviewAllText {
+      right: 5px; 
+      bottom: 5px; 
+      transform: translateY(0); 
+  }
 }

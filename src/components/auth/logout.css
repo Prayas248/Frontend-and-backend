@@ -1,19 +1,59 @@
-
 .redHeading {
-    color: red;
-    font-size: 50px;
-    margin-bottom: 40px;
-  }
-  
-  .appBarContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .paths {
+  color: red;
+  font-size: 50px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.appBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.paths {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 15px 90px;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .redHeading {
     font-size: 40px;
-    font-weight: bold;
-    margin: 15px 90px;
+    margin-bottom: 30px;
   }
-  
+
+  .paths {
+    font-size: 30px;
+    margin: 15px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .redHeading {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .paths {
+    font-size: 25px;
+    margin: 15px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .redHeading {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .paths {
+    font-size: 20px;
+    margin: 15px 15px;
+  }
+}
