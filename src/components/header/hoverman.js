@@ -2,7 +2,7 @@ import React from "react";
 import "./hover.css";
 import Handbags from '../../assets/handbag.png';
 import { useNavigate } from "react-router-dom";
-import Photo from '../../assets/photo.png';
+
 
 
 const apparel = ['Shirt','Kurtas','Dupattas','Jackets','Fastive Wear','Shawls'];
@@ -76,10 +76,6 @@ const Mandrop = ({name,subname}) =>{
 
                 </div>
 
-                </div>
-                <div className="photo">
-                <img className="pic" src={Photo}></img>
-                    <img className="pic" src={Photo}></img>
                 </div>
         </>
     );

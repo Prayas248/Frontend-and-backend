@@ -130,22 +130,24 @@ useEffect( ()=>{
         <div className="dashboard">
             <br></br>
             <center className="dash-head">EXTRA 15% OFF FOR FIRST TIME CUSTOMERS | T&C APPLY | CLICK TO COPY NEW15</center>
+            <div className="t">
             <div className="flex flex-dash">
                 <img src={logo} className="logo" onClick={()=>{
                     navigate('/');
                 }}/>
-                <input className="textarea" name="search" value={formdata.search} onChange={changehandler} type="text" placeholder="  Search for India's best products 🔍" ></input>
-                <button onClick={findhandler}>Search</button>
+                <div className="se">
+                <input className="textarea" name="search" value={formdata.search} onChange={changehandler} type="text" placeholder="  Search for India's best products " ></input>               
+                 <button onClick={findhandler} className="searchbut">Search</button></div>
                 <Link to='/wishlist'><FavoriteBorderIcon /></Link>
                 <LocalShippingOutlinedIcon />
                 <Link to='/cart'><ShoppingCartOutlinedIcon /></Link>
-               {!localStorage.getItem('token') &&  <button className="dash-button"><Link to='/auth'>Login 🔜</Link></button>}
+               {!localStorage.getItem('token') &&  <button className="dash-button"><Link to='/auth'><p>Login</p></Link></button>}
                 {localStorage.getItem('token') && <button className="dash-button" onClick={()=>{
                     localStorage.removeItem('token');
                     navigate('/auth');
                 }}>Logout</button>}
             </div>
-
+            </div>
 
             <hr></hr>
             <div className="flex flex-nav">

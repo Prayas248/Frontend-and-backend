@@ -2,7 +2,7 @@ import React from "react";
 import "./hover.css";
 import Handbags from '../../assets/handbag.png';
 import { useNavigate } from "react-router-dom";
-import Photo from '../../assets/photo.png';
+
 
 
 const apparel = ['Bottom Wear','Dress Material','Dupattas','Jacket & Shrugs','Kaftans','Kurtas','Kurta Sets','Lehengas','Lounge Wear','Shawls & Stoles','Short Kurti','Tops & Tunics'];
@@ -118,10 +118,6 @@ const Womendrop = () =>{
                     ))}
                     
 
-                </div>
-                <div className="photo">
-                <img className="pic" src={Photo}></img>
-                    <img className="pic" src={Photo}></img>
                 </div>
             </div>
         </>

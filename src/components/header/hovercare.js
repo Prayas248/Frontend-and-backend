@@ -3,8 +3,6 @@ import "./hover.css";
 import Handbags from '../../assets/handbag.png';
 import { useNavigate } from "react-router-dom";
 
-import Photo from '../../assets/photo.png';
-
 const Bath = ['Bamboo Items','Face Wash','Soap'
 ];
 const Skin =['Face Cream','Face Scrub'];
@@ -85,10 +83,6 @@ const Caredrop = ({name,subname}) =>{
                     {Wellness.map((Apparel,key)=>(
                         <span onClick={()=>{navigate(`/Personal Care/Wellness/${Apparel}`)}} key={key}>{Apparel}</span>
                     ))}
-                </div>
-                <div className="photo">
-                <img className="pic" src={Photo}></img>
-                    <img className="pic" src={Photo}></img>
                 </div>
             </div>
         </>

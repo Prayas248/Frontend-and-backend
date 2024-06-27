@@ -67,7 +67,7 @@ import { Link } from "react-router-dom"
         </div>
 
         <div className="Quicklinks">
-          <div className="heading">Quick Links</div>
+          <div className="headin">Quick Links</div>
           <div>
             <Link to='/product_customise' className="footerLinks">PRODUCTS CUSTOMIZATION</Link> <br />
             <Link to='/egift'  className="footerLinks">E GIFT CARS</Link> <br />
@@ -78,7 +78,7 @@ import { Link } from "react-router-dom"
         </div>
 
         <div className="Company">
-          <div className="heading">Company</div>
+          <div className="headin">Company</div>
 
           <div>
             <Link to='/blogpage' className="footerLinks">BLOG</Link> <br />
@@ -93,7 +93,7 @@ import { Link } from "react-router-dom"
         </div>
 
         <div className="Contact">
-          <div className="heading">Contact Info</div>
+          <div className="headin">Contact Info</div>
 
           <div className="contact-section1">
             <div className="greyFont">EMAIL</div>

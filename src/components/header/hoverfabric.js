@@ -2,7 +2,7 @@ import React from "react";
 import "./hover.css";
 import Handbags from '../../assets/handbag.png';
 import { useNavigate } from "react-router-dom";
-import Photo from '../../assets/photo.png';
+
 
 
 const Cotton = ['Ajrakh','Bengal Cotton','Block Printed','Cotton Bandhani','Jamdani','Sambhalpuri Cotton'
@@ -85,10 +85,6 @@ const Fabricdrop = ({name,subname}) =>{
                     {Handwoven.map((Apparel,key)=>(
                         <span onClick={()=>{navigate(`/Fabrics/Handwoven/${Apparel}`)}} key={key}>{Apparel}</span>
                     ))}
-                </div>
-                <div className="photo">
-                <img className="pic" src={Photo}></img>
-                    <img className="pic" src={Photo}></img>
                 </div>
             </div>
         </>

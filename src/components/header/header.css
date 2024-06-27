@@ -8,7 +8,16 @@
     display: flex;
     align-items: center;
 }
-
+.t{
+    height: 1.3cm;
+    margin-top: 10px;
+    align-items: center;
+}
+.se{
+    display: flex;
+     width: 80%;
+    
+}
 .textarea{
     width: 80%;
     box-sizing: border-box;
@@ -18,22 +27,30 @@
     padding: 0.5rem 0 0.5rem 0;
 }
 
+.searchbut{
+    height: 1cm;
+    width: 3cm;
+}
 .flex-dash{
     align-content:space-evenly ;
 }
 
 .logo{
     width: 10%;
-    height: 10%;
+    height: 15%;
+    margin-left: 15px;
 }
 
 .dash-button{
-    width: 20%;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
-    color: #fff;
-    background-color: rgb(185, 28, 28);
+    color: black;
+    width: 5cm;
+    height: 1cm;
+    background-color: rgb(241, 26, 26);
 }
-
+.dash-button p{
+    text-align: center;
+}
 .flex-nav{
     justify-content: center;
     padding: 1rem 0 1rem 0;
@@ -89,7 +106,7 @@
 }
 
 .shop-b{
-    background-color: goldenrod;
+    background-color: red;
     padding: 0.25rem 0.5rem 0.25rem 0.5rem;
    
 }
@@ -100,17 +117,23 @@
     left: 5rem;
     font-size: 1.5rem;
     margin-right: 1rem;
-    color: #fff;
+    color: black;
 }
-
+.img-1 p{
+    font-size: 1cm;
+    font-weight: 300;
+}
 .img-2{
     position: relative;
     top: -7rem;
     left: 7rem;
     margin-right: 1rem;
-    color: #fff;
+    color: black;
 }
-
+.img-2 p{
+    font-size: 1cm;
+    font-weight: 300;
+}
 .main{
     width: 65vw;
 }

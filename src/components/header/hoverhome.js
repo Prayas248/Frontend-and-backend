@@ -2,7 +2,7 @@ import React from "react";
 import "./hover.css";
 import Handbags from '../../assets/handbag.png';
 import { useNavigate } from "react-router-dom";
-import Photo from '../../assets/photo.png';
+
 
 
 const Decor = ['Candles and Candle Stands','Clocks And Mirror Walls','Garden','Incenses and Fragrances','Jars & Canisters','Lamps and Lanterns','Picture Frames','Stationery','Storage and Baskets','Silver Home Accents','Table Top Accessories'
@@ -85,10 +85,7 @@ const Homedrop = ({name,subname}) =>{
                         <span onClick={()=>{navigate(`/Home Decor/Others/${Apparel}`)}} key={key}>{Apparel}</span>
                     ))}
                 </div>
-                <div className="photo">
-                <img className="pic" src={Photo}></img>
-                    <img className="pic" src={Photo}></img>
-                </div>
+               
             </div>
         </>
     );

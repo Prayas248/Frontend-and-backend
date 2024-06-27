@@ -1,37 +1,39 @@
 import React from 'react'
 import './elegant.css'
-import handbag from '../../assets/handbag.png'
-import { useNavigate } from 'react-router-dom'
+import bangle from '../../assets/bangle.png'
+import neck from '../../assets/neck.png'
+import anklets from '../../assets/anklets.png'
+import bracelet from '../../assets/bracelet.png'
+import earrings from '../../assets/earrings.png'
 function Elegants() {
-    const navigate = useNavigate()
     return (
-        <div className="head-section">
+        <div className="eleganthead-section">
             <div>
-                <div className="nav">
+                <div className="elegantnav">
                     <div><h1>Elegant jewellery</h1></div> 
-                    <div className="flex">
+                    <div className="elegantflex">
                         <div>
-                            <img className="imgh" onClick={()=>{navigate(`/Women/Jewellery/Cuffs/ Bracelets/ Bangles`)}} src={handbag}></img>
+                            <img className="elegantimgh" src={bangle}></img>
                             <p>BANGLES</p>
                         </div>
 
                         <div>
-                            <img className="imgh" onClick={()=>{navigate(`/Women/Jewellery/Necklaces & Pendants`)}} src={handbag}></img>
+                            <img className="elegantimgh" src={neck}></img>
                             <p>NECKLACE</p>
                         </div>
 
                         <div>
-                            <img className="imgh" onClick={()=>{navigate(`/Women/Jewellery/Anklets`)}}src={handbag}></img>
+                            <img className="elegantimgh" src={anklets}></img>
                             <p>ANKLETS</p>
                         </div>
 
                         <div>
-                            <img className="imgh"onClick={()=>{navigate(`/Women/Jewellery/Cuffs/ Bracelets/ Bangles`)}} src={handbag}></img>
+                            <img className="elegantimgh" src={bracelet}></img>
                             <p>BRACELETS</p>
                         </div>
 
                         <div>
-                            <img className="imgh" onClick={()=>{navigate(`/Women/Jewellery/Earrings`)}}src={handbag}></img>
+                            <img className="elegantimgh" src={bracelet}></img>
                             <p>EARRINGS</p>
                         </div>
                     </div>

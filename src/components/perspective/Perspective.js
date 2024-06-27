@@ -1,11 +1,11 @@
 import React from 'react';
 import './Perspective.css';
-
+import side from '../../assets/side.png'
 const OurPerspective = () => {
   return (
     <div className="perspective-container">
       <div className="image-container">
-        <img src="link-to-image.jpg" alt="Woman in saree" className="perspective-image" /> 
+        <img src={side} alt="Woman in saree" className="perspective-image" /> 
         {/* Replace 'link-to-image.jpg' with your actual image URL */}
       </div>
       <div className="text-container">
